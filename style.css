@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mulish:wght@700&family=Space+Grotesk:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
+  font-family: 'Mulish', sans-serif;
+  /*background-color: rgb(0 25 49);*/
+  background-color: #000;
+}
+
+/*Home section*/
+#home{
+  width: 100%;
+  height: 100vh;
+}
+#home h1{
+  color: #fff;
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+#home h1 strong{
+  color: #0094f6;
+}
+#link{
+  display: none ;
+}
+#home a{
+  text-decoration: none;
+  color: #0094f6;
+  background-color: #fff;
+  padding: .7rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 23px 50px -5px #0094f6
+}
+#home a:hover{
+  background-color: #0094f6;
+  color: #fff;
+}
+#btn-div{
+  position: fixed;
+  top: 2rem;
+  right: 5rem;
+}
+#btn-div span{
+  font-size: 3rem;
+  color: orangered;
+  cursor: pointer;
+  z-index: 999;
+}
+#btn-div span i{
+  width: 100px !important;
+  height: 100px !important;
+  padding: .2rem .5rem;
+  border-radius: 2.5rem !important;
+  border: 2px solid orangered;
+}
+#slide-right{
+  position: fixed;
+  top: 9rem;
+  right: 15rem;
+  display: none;
+}
+#slide-right span{
+  font-size: 3rem;
+  color: orangered;
+  cursor: pointer;
+  z-index: 999;
+}
+#slide-right span i{
+  width: 100px !important;
+  height: 100px !important;
+  padding: .2rem .5rem;
+  font-size: 5rem;
+}
+#bottom-left{
+  position: fixed;
+  top: 5rem;
+  left: 3rem;
+  color: orangered;
+  line-height: 0;
+  display: none;
+}
+#bottom-left span i{
+  font-size: 5rem;
+}
+#bottom-right{
+  position: fixed;
+  top: 20rem;
+  right: 10rem;
+  color: orangered;
+  line-height: 0;
+  display: none;
+}
+#bottom-right span i{
+  font-size: 5rem;
+}
+@keyframes bouncing {
+  0% {bottom: 20px;}
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 150px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 200px;
+  color: orangered !important;
+}
+
+/*selected section*/
+
+#selected{
+  width: 100%;
+  height: 60vh;
+}
+#selected h5{
+  font-size: 3rem;
+  color: #bdbdbd;
+}
+#selected h1{
+  font-size: 5rem;
+  color: orangered;
+}
+#selected p{
+  color: gray;
+  width: 40%;
+  text-align: center;
+  margin: 0 30%;
+  margin-bottom: 2rem;
+}
+#selected a{
+  text-decoration: none;
+  color: #bdbdbd;
+  background-color: orangered;
+  padding: .7rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 23px 50px -5px #0094f6;
+}
+#selected a:hover{
+  background-color: #bdbdbd;
+  color: orangered;
+}
+/*images section*/
+#images{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  content: center;
+  width: 100%;
+  height: 90vh;
+}
+#img{
+  width: 100%;
+  height: 150% !important;
+  padding-bottom: 20rem !important;
+  left: 10rem;
+}
+.card{
+  width: 15rem;
+  border: none;
+  text-align: left;
+  float: right !important;
+  background: none !important;
+  height: 20rem;
+  padding: 5rem 0;
+}
+.card img.card-img-top{
+  border-radius: 2rem;
+  height: 20rem !important;
+  position: absolute !important;
+}
+.card:nth-child(1){
+  z-index: 999;
+  /*right: 18rem;
+  height: 35rem !important;*/
+  right: 43rem;
+  padding: 3rem 0 2rem 4rem;
+  transition: 1s;
+}
+.card:nth-child(2){
+  z-index: 666;
+  /*right: 14rem;*/
+  padding: 3rem 0 2rem 4rem;
+  right: 30rem;
+  opacity: 1 !important;
+  transition: 1s;
+}
+.card:nth-child(3){
+  z-index: 333;
+  /*right: 10rem;*/
+  padding: 3rem 0 2rem 4rem;
+  right: 18rem;
+  opacity: 1 !important;
+  transition: 1s;
+}
+.card:nth-child(4){
+  z-index: 111;
+  right: 4rem;
+  opacity: 1 !important;
+  transition: 1s;
+  padding: 3rem 0 2rem 4rem;
+}
+.card-body a.btn{
+  background-color: orangered;
+  color: #fff;
+}
+.card-body{
+  display: none;
+  z-index: 1000 !important;
+  margin-top: 17rem;
+  padding: 2 2rem;
+  width: 116%;
+  background-color: orangered;
+  height: 40rem !important;
+}
+.card:nth-child(2) .card-body{
+  width: 136.5%;
+}
+/*
+.card:nth-child(2){
+  left: 12rem;
+  z-index: 100;
+  opacity: .8;
+  margin-top: 2rem;
+  height: 2rem;
+}
+.behind img{
+  border-radius: 2rem !important;
+}
+.card:nth-child(3){
+  left: 6rem;
+  z-index: 5;
+  opacity: .6;
+  height: 2rem;
+}
+.card:nth-child(4){
+  left: 2rem;
+  z-index: 1;
+  opacity: .4;
+  height: 2rem;
+}*/
